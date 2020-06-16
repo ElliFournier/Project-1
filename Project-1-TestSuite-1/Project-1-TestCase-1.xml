@@ -35,7 +35,9 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters/>
+        <con:parameters>
+          <con:entry key="travelRegion" value="USA"/>
+        </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="3a52c1b1-0b22-4256-8180-88887d9c32da">
             <con:authProfile>Inherit From Parent</con:authProfile>
