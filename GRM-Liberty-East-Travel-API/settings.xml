@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="219e7889-d6d1-448c-9f4b-1ef91fb0c156" name="GRM Liberty East Travel API" type="rest_ex" wadlVersion="https://swagger.io/swagger2/specification" definitionUrl="\\Mac\Home\Downloads\swagger-client-generated\swagger.json" basePath="/mnminhaz/Travel/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>Liberty East Travel API for Quotation and Policy Issuance</con:description>
+  <con:settings>
+    <con:setting id="219e7889-d6d1-448c-9f4b-1ef91fb0c156fileName">GRM-Liberty-East-Travel-API</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart="file:////Mac/Home/Downloads/swagger-client-generated/swagger.json">
+    <con:part>
+      <con:url>file:////Mac/Home/Downloads/swagger-client-generated/swagger.json</con:url>
+      <con:content>{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Liberty East Travel API for Quotation and Policy Issuance",
+    "version" : "1.0.0",
+    "title" : "GRM Liberty East Travel API"
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/mnminhaz/Travel/1.0.0",
+  "schemes" : [ "https" ],
+  "security" : [ {
+    "ApiKeyAuth" : [ ]
+  } ],
+  "paths" : {
+    "/quotation" : {
+      "get" : {
+        "summary" : "Get Travel Quotation",
+        "description" : "Use this API Operation to calculating Travel quotation",
+        "parameters" : [ {
+          "name" : "travelRegion",
+          "in" : "query",
+          "description" : "Enter travel Destination",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "plan",
+          "in" : "query",
+          "description" : "Plan choosed",
+          "required" : true
+        }, {
+          "name" : "noOfTravelers",
+          "in" : "query",
+          "description" : "No of travelers travelling",
+          "required" : true
+        }, {
+          "name" : "noOfDays",
+          "in" : "query",
+          "description" : "No of Days  1 to max 180",
+          "required" : true
+        }, {
+          "name" : "promo-code",
+          "in" : "header",
+          "description" : "promotion code",
+          "required" : true
+        }, {
+          "name" : "x-api-key",
+          "in" : "header",
+          "description" : "Authorization token",
+          "required" : true
+        }, {
+          "name" : "noOfChildren",
+          "in" : "query",
+          "description" : "No of children Accompanied",
+          "required" : true
+        }, {
+          "name" : "x-lm-trans-id",
+          "in" : "header",
+          "description" : "Unique transaction id",
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "gives the quotation plan"
+          },
+          "401" : {
+            "$ref" : "#/components/responses/UnauthorizedError"
+          }
+        }
+      }
+    },
+    "/policy/" : {
+      "post" : {
+        "summary" : "Submit Travel Policy",
+        "description" : "Use this method to submit New Travel Policy",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Showing you the result for quotation data"
+          },
+          "401" : {
+            "$ref" : "#/components/responses/UnauthorizedError"
+          }
+        },
+        "security" : [ {
+          "ApiKeyAuth" : [ ]
+        } ]
+      }
+    }
+  },
+  "definitions" : { }
+}</con:content>
+      <con:type>https://swagger.io/swagger2/specification</con:type>
+    </con:part>
+  </con:definitionCache>
+  <con:endpoints>
+    <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+  </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="3a52c1b1-0b22-4256-8180-88887d9c32da">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:interface>

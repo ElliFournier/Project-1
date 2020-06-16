@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/policy/" path="/policy/" id="fbe3ec04-4ef4-4ef5-a668-a078822bbd5f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fbe3ec04-4ef4-4ef5-a668-a078822bbd5ffileName">%2Fpolicy%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="POST" id="57f7926f-78ff-4aa3-8900-fee86de4559c" method="POST">
+    <con:description>Use this method to submit New Travel Policy
+Submit Travel Policy</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c912a836-2d06-4470-8745-3a6346bd6490" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="3a52c1b1-0b22-4256-8180-88887d9c32da">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+        <con:entry environmentId="9e9cb74d-e84b-4454-8ac8-8657d75e4056">
+          <con:authProfile>No Authorization</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="3a52c1b1-0b22-4256-8180-88887d9c32da">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="3a52c1b1-0b22-4256-8180-88887d9c32da">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>
