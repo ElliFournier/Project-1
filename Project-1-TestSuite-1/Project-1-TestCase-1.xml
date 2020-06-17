@@ -36,14 +36,14 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="x-lm-trans-id" value="2"/>
+          <con:entry key="x-lm-trans-id" value="7"/>
           <con:entry key="travelRegion" value="USA4"/>
-          <con:entry key="x-api-key" value="1"/>
-          <con:entry key="noOfChildren" value="1"/>
-          <con:entry key="noOfTravelers" value="1"/>
-          <con:entry key="promo-code" value="1"/>
-          <con:entry key="plan" value="1"/>
-          <con:entry key="noOfDays" value="1"/>
+          <con:entry key="x-api-key" value="7"/>
+          <con:entry key="noOfChildren" value="7"/>
+          <con:entry key="noOfTravelers" value="7"/>
+          <con:entry key="promo-code" value="7"/>
+          <con:entry key="plan" value="7"/>
+          <con:entry key="noOfDays" value="7"/>
         </con:parameters>
         <con:environmentSpec>
           <con:entry environmentId="3a52c1b1-0b22-4256-8180-88887d9c32da">
